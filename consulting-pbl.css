@@ -5,20 +5,65 @@ body {
   margin: 0;
   padding: 0;
 }
+
+/* Horizontal block color menu for higher education theme */
+.main-nav {
+  width: 100vw;
+  background: #2C3E50;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.main-nav ul {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav li {
+  margin: 0;
+  padding: 0;
+  flex: 1;
+}
+
+.main-nav a {
+  display: block;
+  padding: 18px 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #fff;
+  background: #2C3E50;
+  transition: background 0.2s, color 0.2s;
+  letter-spacing: .04em;
+  font-size: 1.13em;
+}
+
+.main-nav a.active,
+.main-nav a:hover {
+  background: #1ABC9C;
+  color: #20344c;
+  text-decoration: none;
+}
+
 h2, h3, h4 {
   color: #234567;
 }
+
 ul, ol {
   margin-left: 2em;
 }
+
 section {
   background: #fff;
-  margin: 24px auto;
-  padding: 24px 32px;
-  border-radius: 8px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
-  max-width: 800px;
+  margin: 28px auto;
+  padding: 30px 38px;
+  border-radius: 10px;
+  box-shadow: 0 2.5px 14px rgba(44,62,80,0.07);
+  max-width: 850px;
 }
+
 label {
   display: block;
   margin-top: 1em;
@@ -55,18 +100,4 @@ button:hover {
   color: #c02e2e;
   margin-top: 1em;
   font-weight: 500;
-}
-nav {
-  padding: 1em 2em;
-  background: #e7edf0;
-  margin-bottom: 1em;
-  border-bottom: 1px solid #bbb;
-}
-nav a {
-  color: #2168aa;
-  text-decoration: none;
-  font-size: 1em;
-}
-nav a:hover {
-  text-decoration: underline;
 }
