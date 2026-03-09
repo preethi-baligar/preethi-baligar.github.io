@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tourist Enquiry</title>
+<link rel="stylesheet" href="style.css">
+<script src="enquiry.js"></script>
+</head>
+
+<body>
+
+<header>
+<h1>Tourist Enquiry Form</h1>
+</header>
+
+<section>
+
+<form onsubmit="return submitForm()">
+
+<label>Name</label>
+<input type="text" id="name" required>
+
+<label>Email</label>
+<input type="email" id="email" required>
+
+<label>Country</label>
+<input type="text" id="country" required>
+
+<label>Places Interested</label>
+<input type="text" id="places">
+
+<label>Message</label>
+<textarea id="message"></textarea>
+
+<button type="submit">Submit</button>
+
+</form>
+
+<p id="response"></p>
+
+</section>
+
+</body>
+</html>
